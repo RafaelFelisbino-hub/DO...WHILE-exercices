@@ -4,22 +4,20 @@
 
 int main()
 {
-	int numero1, numero2;
+	int numero1 = 1, numero2 = 0;
 
 	setlocale(LC_ALL, "Portuguese");
 	system("color 17");
 
-	inicio:
-	printf("Digite o valor do primeiro n˙mero:  ");
-	scanf_s("%i", &numero1);
-
-	printf("Digite o valor do segundo n˙mero:  ");
-	scanf_s("%i", &numero2);
-
-	if (numero1 > numero2) 
+	while (numero1 > numero2) 
 	{
-		printf("O primeiro valor deve ser menor que o segundo.\n\n");
-		goto inicio;
+		printf("O valor do primeiro numero deve ser menor que o do segundo.\n");
+
+		printf("Digite o valor do primeiro n√∫mero:  ");
+		scanf_s("%i", &numero1);
+
+		printf("Digite o valor do segundo n√∫mero:  ");
+		scanf_s("%i", &numero2);
 	}
 	
 	do 
