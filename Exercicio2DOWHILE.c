@@ -1,3 +1,7 @@
+/*Faça um algoritmo que escreva na tela os números pares entre 0 e 50,
+usando um comando “repita”. Não utilize nenhum “se..então” neste
+algoritmo, apenas o comando “repita”.*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
@@ -15,7 +19,7 @@ int main()
 	
 		while(numero % 2 == 0)
 		{
-			printf("Os numeros pares s�o:  %i\n", numero);
+			printf("Os numeros pares são:  %i\n", numero);
 			numero++;
 		}					
 
