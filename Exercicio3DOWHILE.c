@@ -1,7 +1,7 @@
-/*Fazer um algoritmo que calcule e exiba na tela o fatorial de um n˙mero fornecido
-pelo usu·rio, usando o comando ìrepitaî. Perguntar ao usu·rio se ele deseja
-calcular o fatorial de outro n˙mero e repetir a execuÁ„o do algoritmo tantas vezes
-quantas o usu·rio indicar.*/
+/*Fazer um algoritmo que calcule e exiba na tela o fatorial de um n√∫mero fornecido
+pelo usu√°rio, usando o comando ‚Äúrepita‚Äù. Perguntar ao usu√°rio se ele deseja
+calcular o fatorial de outro n√∫mero e repetir a execu√ß√£o do algoritmo tantas vezes
+quantas o usu√°rio indicar.*/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -14,22 +14,22 @@ int main()
 	setlocale(LC_ALL, "Portuguese");
 	system("color 17");
 
-	printf("ForneÁa um n˙mero para calcular o fatorial:  ");
+	printf("Forne√ßa um n√∫mero para calcular o fatorial:  ");
 	scanf_s("%i", &numero);
 
 	do
 	{
-			fatorial = fatorial * numero;
-			numero--;
+		fatorial = fatorial * numero;
+		numero--;
 
-			printf("O fatorial È %d\n", fatorial);
+		printf("O fatorial √© %d\n", fatorial);
 			
-			if (numero == 1)
-			{
-				printf("ForneÁa um n˙mero para calcular o fatorial, digite 0 para fechar o programa:  \n");
-				scanf_s("%i", &numero);
-				fatorial = 1;
-			}
+		if (numero == 1)
+		{
+			printf("Forne√ßa um n√∫mero para calcular o fatorial, digite 0 para fechar o programa:  \n");
+			scanf_s("%i", &numero);
+			fatorial = 1;
+		}
 	} while (numero > 1);
 }
 
